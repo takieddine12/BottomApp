@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         bottomSheetBehavior  = BottomSheetBehavior.from(bottomSheetView);
         bottomSheetBehavior.setPeekHeight(200);
         bottomSheetBehavior.setHideable(false);
+        bottomSheetBehavior.setMaxHeight(1200);
         bottomSheetBehavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
